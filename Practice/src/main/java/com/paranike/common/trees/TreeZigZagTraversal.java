@@ -65,7 +65,8 @@ public class TreeZigZagTraversal {
 
 		three.setLeftChild(five);
 		three.setRightChild(four);
-
+		BinaryTree<String> tree = new BinaryTree<>(one);
+		System.out.println("Height: " + tree.getHeightOfTree(one));
 		obj.visitAllNodesZigZag(one);
 
 	}

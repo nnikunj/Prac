@@ -56,6 +56,20 @@ public class BinaryTree<T> {
 		visitNode(inputNode, processor);
 	}
 
+	public int getHeightOfTree(BinaryTreeNode<T> rootNode) {
+		int height = 0;
+		if (rootNode == null) {
+			return height;
+		} else {
+			int leftHeight = getHeightOfTree(rootNode.getLeftChild());
+			int rightHeight = getHeightOfTree(rootNode.getRightChild());
+			// plus 1 for root itself
+			height = ((leftHeight > rightHeight) ? leftHeight : rightHeight) + 1;
+
+		}
+		return height;
+	}
+
 	public void visitAllNodesWithBFS(BinaryTreeNode<T> rootNode, NodeInfoProcessor<T> processor) {
 		if (rootNode == null) {
 			return;
