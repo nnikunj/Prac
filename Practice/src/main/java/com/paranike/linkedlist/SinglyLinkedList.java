@@ -44,11 +44,11 @@ public class SinglyLinkedList<T> {
 			return null;
 		}
 
-		ListNode<T> fast = head;
+		ListNode<T> slow = head;
 		ListNode<T> mid = null;
 		while (current != null) {
-			mid = fast;
-			fast = fast.getNext();
+			mid = slow;
+			slow = slow.getNext();
 			// Jump twice
 			current = current.getNext();
 			if (current != null) {
