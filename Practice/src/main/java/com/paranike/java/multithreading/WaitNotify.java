@@ -1,4 +1,4 @@
-package com.paranike.java.multitrgeading;
+package com.paranike.java.multithreading;
 
 public class WaitNotify {
 

@@ -1,4 +1,4 @@
-package com.paranike.java.multitrgeading;
+package com.paranike.java.multithreading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
